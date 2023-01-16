@@ -13,6 +13,7 @@
 		AC060FA22975A73600F39631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC060FA02975A73600F39631 /* Main.storyboard */; };
 		AC060FA42975A73800F39631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC060FA32975A73800F39631 /* Assets.xcassets */; };
 		AC060FA72975A73800F39631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC060FA52975A73800F39631 /* LaunchScreen.storyboard */; };
+		AC32CDB72975B0FE00D36478 /* CustomSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AC32CDB62975B0FE00D36478 /* CustomSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC32CDB72975B0FE00D36478 /* CustomSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TestCustomSDK;
+			packageProductDependencies = (
+				AC32CDB62975B0FE00D36478 /* CustomSDK */,
+			);
 			productName = TestCustomSDK;
 			productReference = AC060F972975A73600F39631 /* TestCustomSDK.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = AC060F8E2975A73600F39631;
+			packageReferences = (
+				AC32CDB52975B0FE00D36478 /* XCRemoteSwiftPackageReference "CustomSDK" */,
+			);
 			productRefGroup = AC060F982975A73600F39631 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC32CDB52975B0FE00D36478 /* XCRemoteSwiftPackageReference "CustomSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NickSagan/CustomSDK";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC32CDB62975B0FE00D36478 /* CustomSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC32CDB52975B0FE00D36478 /* XCRemoteSwiftPackageReference "CustomSDK" */;
+			productName = CustomSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC060F8F2975A73600F39631 /* Project object */;
 }
