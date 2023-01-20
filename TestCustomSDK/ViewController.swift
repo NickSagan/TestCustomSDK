@@ -6,15 +6,20 @@
 //
 
 import UIKit
-import CustomSDK
+import MPB
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(RandomNumberGenerator.getNumber())
+        MPB.setup(color: .systemMint)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let vc = MPB.controller()
+        present(vc, animated: true)
+    }
 
 }
 

@@ -14,6 +14,7 @@
 		AC060FA42975A73800F39631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC060FA32975A73800F39631 /* Assets.xcassets */; };
 		AC060FA72975A73800F39631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC060FA52975A73800F39631 /* LaunchScreen.storyboard */; };
 		AC32CDB72975B0FE00D36478 /* CustomSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AC32CDB62975B0FE00D36478 /* CustomSDK */; };
+		ACE60636297B082B0074F5F5 /* MPB in Frameworks */ = {isa = PBXBuildFile; productRef = ACE60635297B082B0074F5F5 /* MPB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE60636297B082B0074F5F5 /* MPB in Frameworks */,
 				AC32CDB72975B0FE00D36478 /* CustomSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +89,7 @@
 			name = TestCustomSDK;
 			packageProductDependencies = (
 				AC32CDB62975B0FE00D36478 /* CustomSDK */,
+				ACE60635297B082B0074F5F5 /* MPB */,
 			);
 			productName = TestCustomSDK;
 			productReference = AC060F972975A73600F39631 /* TestCustomSDK.app */;
@@ -118,6 +121,7 @@
 			mainGroup = AC060F8E2975A73600F39631;
 			packageReferences = (
 				AC32CDB52975B0FE00D36478 /* XCRemoteSwiftPackageReference "CustomSDK" */,
+				ACE60634297B082B0074F5F5 /* XCRemoteSwiftPackageReference "MPB" */,
 			);
 			productRefGroup = AC060F982975A73600F39631 /* Products */;
 			projectDirPath = "";
@@ -376,6 +380,14 @@
 				kind = branch;
 			};
 		};
+		ACE60634297B082B0074F5F5 /* XCRemoteSwiftPackageReference "MPB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NickSagan/MPB";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -383,6 +395,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AC32CDB52975B0FE00D36478 /* XCRemoteSwiftPackageReference "CustomSDK" */;
 			productName = CustomSDK;
+		};
+		ACE60635297B082B0074F5F5 /* MPB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACE60634297B082B0074F5F5 /* XCRemoteSwiftPackageReference "MPB" */;
+			productName = MPB;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
